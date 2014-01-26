@@ -3,9 +3,10 @@
 " Maintainer: miyakogi (https://githuub.com/miyakogi)
 " URL:        https://github.com/miyakogi/slateblue.vim
 " Version:    1.0.0 
-" LastChange: 2014.01.25
+" LastChange: 2014.01.26
 
-" This colorscheme is based on 'slate', which is included in Vim by default.
+" This colorscheme is based on 'slate' colorscheme.
+" Original 'slate' colorscheme is included in Vim by default.
 
 set background=dark
 highlight clear

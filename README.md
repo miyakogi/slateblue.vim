@@ -1,26 +1,20 @@
 slateblue.vim
 =============
 
-This is a Vim colorscheme based on slate, which is included in Vim by default.
+This is a Vim colorscheme based on "slate" colorscheme.
 
-Screenshot
-----------
+Screenshots
+-----------
 
-### C
-
-With [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides) and [lightline.vim](https://github.com/itchyny/lightline.vim).
+### C <small> - With [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides) and [lightline.vim](https://github.com/itchyny/lightline.vim) - </small>
 
 ![C](./images/c_nor.png "With C")
 
-### Python
-
-With [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides), [lightline.vim](https://github.com/itchyny/lightline.vim), and [rainbow_parenatheses.vim](https://github.com/vim-scripts/rainbow_parentheses.vim).
+### Python <small> - With [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides), [lightline.vim](https://github.com/itchyny/lightline.vim), and [rainbow_parenatheses.vim](https://github.com/vim-scripts/rainbow_parentheses.vim) - </small>
 
 ![Python](./images/py.png "With python")
 
-### HTML
-
-With [lightline.vim](https://github.com/itchyny/lightline.vim).
+### HTML <small> - With [lightline.vim](https://github.com/itchyny/lightline.vim) </small>
 
 ![HTML](./images/html.png "With HTML")
 

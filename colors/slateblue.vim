@@ -54,7 +54,7 @@ hi Structure guifg=green ctermfg=green
 hi LineNr guifg=grey50 ctermfg=3 guibg=grey11
 hi Ignore guifg=grey40 cterm=bold ctermfg=7
 hi Todo guifg=orangered guibg=yellow2
-hi ErrorMsg cterm=bold guifg=White guibg=Red cterm=bold ctermfg=7 ctermbg=1
+hi ErrorMsg guifg=#fefefe guibg=#cc0000 gui=bold ctermfg=white ctermbg=red cterm=bold
 hi VisualNOS cterm=bold,underline
 hi WildMenu ctermfg=0 ctermbg=3 guifg=snow guibg=grey0
 hi DiffAdd ctermbg=4
@@ -62,7 +62,7 @@ hi DiffChange ctermbg=5
 hi DiffDelete cterm=bold ctermfg=4 ctermbg=6
 hi DiffText cterm=bold ctermbg=1
 hi Underlined cterm=underline ctermfg=5
-hi Error guifg=White guibg=Red cterm=bold ctermfg=7 ctermbg=1
+hi ErrorMsg guifg=#fefefe guibg=#cc0000 gui=bold ctermfg=white ctermbg=red cterm=bold
 hi SpellErrors guifg=White guibg=Red cterm=bold ctermfg=7 ctermbg=1
 hi Pmenu	guibg=#606060 guifg=#ffffff
 hi PmenuSel	guibg=#eeeeee guifg=#101010

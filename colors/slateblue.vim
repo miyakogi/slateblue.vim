@@ -26,8 +26,8 @@ hi CursorColumn guibg=#181818 gui=none
 hi VertSplit guifg=#000000 guibg=#000000
 hi Folded guibg=black guifg=grey40 ctermfg=grey ctermbg=darkgrey
 hi FoldColumn guibg=black guifg=grey20 ctermfg=4 ctermbg=7
-hi IncSearch gui=bold,underline guifg=#000000 guibg=#54ef35 cterm=none ctermfg=grey ctermbg=blue
-hi Search guifg=#54ef75 guibg=#000000 gui=bold,underline cterm=none ctermfg=yellow ctermbg=green
+hi IncSearch gui=bold guifg=#000000 guibg=#FFFACD cterm=none ctermfg=grey ctermbg=blue
+hi Search guifg=#FFFACD guibg=grey25 gui=bold cterm=none ctermfg=yellow ctermbg=green
 hi ModeMsg guifg=goldenrod cterm=none ctermfg=brown
 hi MoreMsg guifg=SeaGreen ctermfg=darkgreen
 hi NonText guifg=grey12 guibg=grey12 cterm=bold ctermfg=blue
@@ -57,10 +57,10 @@ hi Todo guifg=orangered guibg=yellow2
 hi ErrorMsg guifg=#fefefe guibg=#cc0000 gui=bold ctermfg=white ctermbg=red cterm=bold
 hi VisualNOS cterm=bold,underline
 hi WildMenu ctermfg=0 ctermbg=3 guifg=snow guibg=grey0
-hi DiffAdd ctermbg=4
-hi DiffChange ctermbg=5
-hi DiffDelete cterm=bold ctermfg=4 ctermbg=6
-hi DiffText cterm=bold ctermbg=1
+hi DiffAdd ctermbg=4 guibg=#103333
+hi DiffChange ctermbg=5 guibg=#080818
+hi DiffDelete cterm=bold ctermfg=4 ctermbg=6 guibg=#1E0010
+hi DiffText cterm=bold ctermbg=1 guibg=#4C4745
 hi Underlined cterm=underline ctermfg=5
 hi ErrorMsg guifg=#fefefe guibg=#cc0000 gui=bold ctermfg=white ctermbg=red cterm=bold
 hi SpellErrors guifg=White guibg=Red cterm=bold ctermfg=7 ctermbg=1

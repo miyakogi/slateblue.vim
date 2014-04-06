@@ -30,7 +30,7 @@ hi IncSearch gui=bold guifg=#000000 guibg=#FFFACD cterm=none ctermfg=grey ctermb
 hi Search guifg=#FFFACD guibg=grey25 gui=bold cterm=none ctermfg=yellow ctermbg=green
 hi ModeMsg guifg=goldenrod cterm=none ctermfg=brown
 hi MoreMsg guifg=SeaGreen ctermfg=darkgreen
-hi NonText guifg=grey12 guibg=grey12 cterm=bold ctermfg=blue
+hi NonText guifg=grey35 cterm=bold ctermfg=blue
 hi Question guifg=springgreen ctermfg=green
 hi SpecialKey guifg=grey25
 hi StatusLine guibg=grey8 guifg=grey50 gui=none cterm=bold,reverse

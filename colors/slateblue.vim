@@ -60,6 +60,7 @@ hi DiffChange      term=bold ctermbg=16 guibg=#080818
 hi DiffDelete      term=bold cterm=bold ctermfg=21 ctermbg=16 gui=bold guifg=Blue guibg=#2E0808
 hi DiffText        term=reverse cterm=bold ctermbg=59 gui=bold guibg=#4C4745
 hi Underlined      term=underline cterm=underline ctermfg=111 gui=underline guifg=#80a0ff
+hi Error           ctermfg=196 ctermbg=232 guifg=#f03300 guibg=grey8 gui=bold
 hi ErrorMsg        term=standout cterm=bold ctermfg=231 ctermbg=160 gui=bold guifg=#fefefe guibg=#cc0000
 hi SpellErrors     ctermfg=231 ctermbg=196 guifg=White guibg=Red
 hi Pmenu           ctermfg=231 ctermbg=59 guifg=#ffffff guibg=#606060

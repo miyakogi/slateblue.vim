@@ -2,7 +2,7 @@
 " Name:       slateblue
 " Maintainer: miyakogi (https://githuub.com/miyakogi)
 " URL:        https://github.com/miyakogi/slateblue.vim
-" Version:    1.1.0 
+" Version:    2.0.0 
 " LastChange: 2014.05.14
 
 " This colorscheme is based on 'slate' colorscheme.
@@ -19,74 +19,72 @@ endif
 
 let colors_name = "slateblue"
 
-hi Normal guifg=snow guibg=grey14 ctermbg=black
-hi Cursor guifg=#000000 guibg=#F8F8F0
-hi CursorLine guibg=#181818 gui=none
-hi CursorColumn guibg=#181818 gui=none
-hi VertSplit guifg=#000000 guibg=#000000
-hi Folded guibg=black guifg=grey40 ctermfg=grey ctermbg=darkgrey
-hi FoldColumn guibg=black guifg=grey20 ctermfg=4 ctermbg=7
-hi IncSearch gui=bold guifg=#000000 guibg=#FFFACD cterm=none ctermfg=grey ctermbg=blue
-hi Search guifg=#FFFACD guibg=grey25 gui=bold cterm=none ctermfg=yellow ctermbg=green
-hi ModeMsg guifg=goldenrod cterm=none ctermfg=brown
-hi MoreMsg guifg=SeaGreen ctermfg=darkgreen
-hi NonText guifg=grey35 cterm=bold ctermfg=blue
-hi Question guifg=springgreen ctermfg=green
-hi SpecialKey guifg=grey25
-hi StatusLine guibg=grey8 guifg=grey50 gui=none cterm=bold,reverse
-hi StatusLineNC guibg=grey8 guifg=grey40 gui=none cterm=reverse
-hi Title guifg=gold gui=bold cterm=bold ctermfg=yellow
-hi Statement guifg=CornflowerBlue gui=bold ctermfg=lightblue
-hi Visual gui=underline guibg=#101010 guifg=#ccccee cterm=reverse
-hi WarningMsg guifg=salmon ctermfg=1
-hi String guifg=SkyBlue ctermfg=darkcyan gui=none
-hi Comment gui=none ctermfg=11 guifg=grey50
-hi Constant guifg=#ffa0a0 ctermfg=brown
-hi Special guifg=#FFFACD ctermfg=brown
-hi Identifier guifg=salmon ctermfg=red
-hi Include guifg=red ctermfg=red
-hi PreProc guifg=PaleTurquoise gui=none
-hi Operator guifg=Red ctermfg=Red
-hi Define guifg=gold gui=bold ctermfg=yellow
-hi Type guifg=#8ac6f2 ctermfg=2 gui=bold
-hi Function guifg=navajowhite ctermfg=brown
-hi Structure guifg=green ctermfg=green
-hi LineNr guifg=grey50 ctermfg=3 guibg=grey11
-hi Ignore guifg=grey40 cterm=bold ctermfg=7
-hi Todo guifg=orangered guibg=yellow2
-hi ErrorMsg guifg=#fefefe guibg=#cc0000 gui=bold ctermfg=white ctermbg=red cterm=bold
-hi VisualNOS cterm=bold,underline
-hi WildMenu ctermfg=0 ctermbg=3 guifg=snow guibg=grey0
-hi DiffAdd ctermbg=4 guibg=#103333
-hi DiffChange ctermbg=5 guibg=#080818
-hi DiffDelete cterm=bold ctermfg=4 ctermbg=6 guibg=#2E0808
-hi DiffText cterm=bold ctermbg=1 guibg=#4C4745
-hi Underlined cterm=underline ctermfg=5
-hi ErrorMsg guifg=#fefefe guibg=#cc0000 gui=bold ctermfg=white ctermbg=red cterm=bold
-hi SpellErrors guifg=White guibg=Red cterm=bold ctermfg=7 ctermbg=1
-hi Pmenu	guibg=#606060 guifg=#ffffff
-hi PmenuSel	guibg=#eeeeee guifg=#101010
-hi CursorLineNr guifg=grey90 guibg=#181818
-hi SpellBad     guisp=#ff3300 gui=undercurl
-hi SpellCap     guisp=#00ff9a gui=undercurl
-hi ColorColumn  guibg=grey25
-hi SignColumn guifg=snow guibg=grey8
-hi MatchError guifg=white guibg=#dd2211
+hi Normal          ctermfg=231 ctermbg=235 guifg=snow guibg=grey14
+hi Cursor          ctermfg=16 ctermbg=231 guifg=#000000 guibg=#F8F8F0
+hi CursorColumn    term=reverse ctermbg=234 guibg=#181818
+hi VertSplit       term=reverse cterm=reverse ctermfg=16 ctermbg=16 gui=reverse guifg=#000000 guibg=#000000
+hi Folded          term=standout ctermfg=241 ctermbg=16 guifg=grey40 guibg=black
+hi FoldColumn      term=standout ctermfg=236 ctermbg=16 guifg=grey20 guibg=black
+hi IncSearch       term=reverse cterm=bold ctermfg=16 ctermbg=230 gui=bold guifg=#000000 guibg=#FFFACD
+hi Search          term=reverse cterm=bold ctermfg=230 ctermbg=238 gui=bold guifg=#FFFACD guibg=grey25
+hi ModeMsg         term=bold cterm=bold ctermfg=178 gui=bold guifg=goldenrod
+hi MoreMsg         term=bold cterm=bold ctermfg=29 gui=bold guifg=SeaGreen
+hi NonText         term=bold cterm=bold ctermfg=240 gui=bold guifg=grey35
+hi Question        term=standout cterm=bold ctermfg=48 gui=bold guifg=springgreen
+hi SpecialKey      term=bold ctermfg=238 guifg=grey25
+hi StatusLine      term=bold,reverse ctermfg=244 ctermbg=233 guifg=grey50 guibg=grey8
+hi StatusLineNC    term=reverse ctermfg=241 ctermbg=233 guifg=grey40 guibg=grey8
+hi Title           term=bold cterm=bold ctermfg=220 gui=bold guifg=gold
+hi Statement       term=bold cterm=bold ctermfg=69 gui=bold guifg=CornflowerBlue
+hi Visual          term=reverse cterm=underline ctermfg=189 ctermbg=233 gui=underline guifg=#ccccee guibg=#101010
+hi WarningMsg      term=standout ctermfg=209 guifg=salmon
+hi String          ctermfg=116 guifg=SkyBlue
+hi Comment         term=bold ctermfg=244 guifg=grey50
+hi Constant        term=underline ctermfg=217 guifg=#ffa0a0
+hi Special         term=bold ctermfg=230 guifg=#FFFACD
+hi Identifier      term=underline ctermfg=209 guifg=salmon
+hi Include         ctermfg=196 guifg=red
+hi PreProc         term=underline ctermfg=159 guifg=PaleTurquoise
+hi Operator        ctermfg=196 guifg=Red
+hi Define          cterm=bold ctermfg=220 gui=bold guifg=gold
+hi Type            term=underline cterm=bold ctermfg=117 gui=bold guifg=#8ac6f2
+hi Function        ctermfg=223 guifg=navajowhite
+hi Structure       ctermfg=46 guifg=green
+hi LineNr          term=underline ctermfg=244 ctermbg=234 guifg=grey50 guibg=grey11
+hi Ignore          ctermfg=241 guifg=grey40
+hi Todo            term=standout ctermfg=202 ctermbg=226 guifg=orangered guibg=yellow2
+hi VisualNOS       term=bold,underline cterm=bold,underline gui=bold,underline
+hi WildMenu        term=standout ctermfg=231 ctermbg=16 guifg=snow guibg=grey0
+hi DiffAdd         term=bold ctermbg=23 guibg=#103333
+hi DiffChange      term=bold ctermbg=16 guibg=#080818
+hi DiffDelete      term=bold cterm=bold ctermfg=21 ctermbg=16 gui=bold guifg=Blue guibg=#2E0808
+hi DiffText        term=reverse cterm=bold ctermbg=59 gui=bold guibg=#4C4745
+hi Underlined      term=underline cterm=underline ctermfg=111 gui=underline guifg=#80a0ff
+hi ErrorMsg        term=standout cterm=bold ctermfg=231 ctermbg=160 gui=bold guifg=#fefefe guibg=#cc0000
+hi SpellErrors     ctermfg=231 ctermbg=196 guifg=White guibg=Red
+hi Pmenu           ctermfg=231 ctermbg=59 guifg=#ffffff guibg=#606060
+hi PmenuSel        ctermfg=233 ctermbg=255 guifg=#101010 guibg=#eeeeee
+" Vim color file
+hi SpellBad        term=reverse cterm=undercurl ctermfg=202 gui=undercurl guisp=#ff3300
+hi SpellCap        term=reverse cterm=undercurl ctermfg=48 gui=undercurl guisp=#00ff9a
+hi ColorColumn     term=reverse ctermbg=238 guibg=grey25
+hi SignColumn      term=standout ctermfg=231 ctermbg=233 guifg=snow guibg=grey8
+hi MatchError      ctermfg=231 ctermbg=160 guifg=white guibg=#dd2211
 
 " Color setting for tablines
-hi TabLineSel  ctermfg=LightGray ctermbg=DarkBlue guifg=grey88 guibg=grey24 gui=NONE
-hi TabLine term=reverse cterm=underline ctermfg=Black ctermfg=Gray ctermbg=black guifg=grey60 guibg=#303030 gui=NONE
-hi TabLineFill ctermfg=LightGray ctermbg=black guifg=#303030 guibg=#9e9e9e
+hi TabLineSel      term=bold ctermfg=254 ctermbg=237 guifg=grey88 guibg=grey24
+hi TabLine         term=reverse ctermfg=246 ctermbg=236 guifg=grey60 guibg=#303030
+hi TabLineFill     term=reverse cterm=reverse ctermfg=247 ctermbg=236 gui=reverse guifg=#303030 guibg=#9e9e9e
 
 " Indent guides
-hi IndentGuidesOdd  guibg=grey8  ctermbg=233
-hi IndentGuidesEven guibg=grey11 ctermbg=234
+hi IndentGuidesOdd  ctermbg=233 guibg=grey8
+hi IndentGuidesEven ctermbg=234 guibg=grey11
 
 " NERDTree
-hi Directory      ctermfg=110  guifg=PaleTurquoise
-hi treeCWD        ctermfg=180  guifg=#ffffff
-hi treeClosable   ctermfg=174  guifg=#df8787
-hi treeOpenable   ctermfg=150  guifg=#afdf87
-hi treePart       ctermfg=244  guifg=#808080
-hi treeDirSlash   ctermfg=244  guifg=PaleTurquoise
-hi treeLink       ctermfg=182  guifg=#dfafdf
+hi Directory       term=bold ctermfg=159 guifg=PaleTurquoise
+hi treeCWD         ctermfg=231 guifg=#ffffff
+hi treeClosable    ctermfg=174 guifg=#df8787
+hi treeOpenable    ctermfg=150 guifg=#afdf87
+hi treePart        ctermfg=244 guifg=#808080
+hi treeDirSlash    ctermfg=159 guifg=PaleTurquoise
+hi treeLink        ctermfg=182 guifg=#dfafdf

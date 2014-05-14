@@ -2,8 +2,8 @@
 " Name:       slateblue
 " Maintainer: miyakogi (https://githuub.com/miyakogi)
 " URL:        https://github.com/miyakogi/slateblue.vim
-" Version:    1.0.0 
-" LastChange: 2014.01.26
+" Version:    1.1.0 
+" LastChange: 2014.05.14
 
 " This colorscheme is based on 'slate' colorscheme.
 " Original 'slate' colorscheme is included in Vim by default.
@@ -71,7 +71,6 @@ hi SpellBad     guisp=#ff3300 gui=undercurl
 hi SpellCap     guisp=#00ff9a gui=undercurl
 hi ColorColumn  guibg=grey25
 hi SignColumn guifg=snow guibg=grey8
-hi SyntasticErrorSign guifg=#f03300 guibg=grey8 gui=bold
 hi MatchError guifg=white guibg=#dd2211
 
 " Color setting for tablines
@@ -80,8 +79,8 @@ hi TabLine term=reverse cterm=underline ctermfg=Black ctermfg=Gray ctermbg=black
 hi TabLineFill ctermfg=LightGray ctermbg=black guifg=#303030 guibg=#9e9e9e
 
 " Indent guides
-hi IndentGuidesOdd  guifg=grey8 guibg=grey8   ctermbg=3
-hi IndentGuidesEven guifg=grey11 guibg=grey11 ctermbg=4
+hi IndentGuidesOdd  guibg=grey8  ctermbg=233
+hi IndentGuidesEven guibg=grey11 ctermbg=234
 
 " NERDTree
 hi Directory      ctermfg=110  guifg=PaleTurquoise

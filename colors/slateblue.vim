@@ -11,12 +11,10 @@
 set background=dark
 highlight clear
 if version > 580
- hi clear
  if exists("syntax_on")
  syntax reset
  endif
 endif
-
 let colors_name = "slateblue"
 
 hi Normal          ctermfg=231 ctermbg=235 guifg=snow guibg=grey14
@@ -60,14 +58,14 @@ hi DiffChange      term=bold ctermbg=16 guibg=#080818
 hi DiffDelete      term=bold cterm=bold ctermfg=21 ctermbg=16 gui=bold guifg=Blue guibg=#2E0808
 hi DiffText        term=reverse cterm=bold ctermbg=59 gui=bold guibg=#4C4745
 hi Underlined      term=underline cterm=underline ctermfg=111 gui=underline guifg=#80a0ff
-hi Error           ctermfg=196 ctermbg=232 guifg=#f03300 guibg=grey8 gui=bold
+hi Error           ctermfg=196 cterm=underline guifg=#f03300 guibg=grey8 gui=bold
 hi ErrorMsg        term=standout cterm=bold ctermfg=231 ctermbg=160 gui=bold guifg=#fefefe guibg=#cc0000
 hi SpellErrors     ctermfg=231 ctermbg=196 guifg=White guibg=Red
 hi Pmenu           ctermfg=231 ctermbg=59 guifg=#ffffff guibg=#606060
 hi PmenuSel        ctermfg=233 ctermbg=255 guifg=#101010 guibg=#eeeeee
 " Vim color file
-hi SpellBad        term=reverse cterm=undercurl ctermfg=202 gui=undercurl guisp=#ff3300
-hi SpellCap        term=reverse cterm=undercurl ctermfg=48 gui=undercurl guisp=#00ff9a
+hi SpellBad        cterm=underline ctermfg=124 ctermbg=bg gui=undercurl guisp=#ff3300
+hi SpellCap        cterm=underline ctermfg=48 ctermbg=bg gui=undercurl guisp=#00ff9a
 hi ColorColumn     term=reverse ctermbg=238 guibg=grey25
 hi SignColumn      term=standout ctermfg=231 ctermbg=233 guifg=snow guibg=grey8
 hi MatchError      ctermfg=231 ctermbg=160 guifg=white guibg=#dd2211
@@ -89,3 +87,5 @@ hi treeOpenable    ctermfg=150 guifg=#afdf87
 hi treePart        ctermfg=244 guifg=#808080
 hi treeDirSlash    ctermfg=159 guifg=PaleTurquoise
 hi treeLink        ctermfg=182 guifg=#dfafdf
+"
+set background=dark

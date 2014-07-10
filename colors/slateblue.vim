@@ -2,22 +2,31 @@
 " Name:       slateblue
 " Maintainer: miyakogi (https://githuub.com/miyakogi)
 " URL:        https://github.com/miyakogi/slateblue.vim
-" Version:    2.0.0 
-" LastChange: 2014.05.14
+" Version:    2.0.1
+" LastChange: 2014.07.10
 
 " This colorscheme is based on 'slate' colorscheme.
-" Original 'slate' colorscheme is included in Vim by default.
+" Original 'slate' colorscheme is included in Vim-runtime by default.
 
+hi clear
 set background=dark
-highlight clear
 if version > 580
  if exists("syntax_on")
  syntax reset
  endif
 endif
-let colors_name = "slateblue"
 
-hi Normal          ctermfg=231 ctermbg=235 guifg=snow guibg=grey14
+let g:colors_name = "slateblue"
+
+if has('gui_running')
+  hi Normal          guifg=snow guibg=grey14
+elseif &t_Co > 255
+  hi Normal          ctermfg=231 ctermbg=235
+  set background=dark
+else
+  hi Normal          ctermfg=white ctermbg=black
+endif
+
 hi Cursor          ctermfg=16 ctermbg=231 guifg=#000000 guibg=#F8F8F0
 hi CursorColumn    term=reverse ctermbg=234 guibg=#181818
 hi VertSplit       term=reverse cterm=reverse ctermfg=16 ctermbg=16 gui=reverse guifg=#000000 guibg=#000000
@@ -64,8 +73,10 @@ hi SpellErrors     ctermfg=231 ctermbg=196 guifg=White guibg=Red
 hi Pmenu           ctermfg=231 ctermbg=59 guifg=#ffffff guibg=#606060
 hi PmenuSel        ctermfg=233 ctermbg=255 guifg=#101010 guibg=#eeeeee
 " Vim color file
-hi SpellBad        cterm=underline ctermfg=124 ctermbg=bg gui=undercurl guisp=#ff3300
-hi SpellCap        cterm=underline ctermfg=48 ctermbg=bg gui=undercurl guisp=#00ff9a
+hi SpellBad        cterm=underline ctermfg=124 ctermbg=16 gui=undercurl guisp=#ff3300
+hi SpellCap        cterm=underline ctermfg=48 ctermbg=16 gui=undercurl guisp=#00ff9a
+hi SpellLocal      cterm=underline ctermfg=48 ctermbg=16 gui=undercurl guisp=#00ff9a
+hi SpellRare       cterm=underline ctermfg=48 ctermbg=16 gui=undercurl guisp=#00ff9a
 hi ColorColumn     term=reverse ctermbg=238 guibg=grey25
 hi SignColumn      term=standout ctermfg=231 ctermbg=233 guifg=snow guibg=grey8
 hi MatchError      ctermfg=231 ctermbg=160 guifg=white guibg=#dd2211
@@ -87,5 +98,3 @@ hi treeOpenable    ctermfg=150 guifg=#afdf87
 hi treePart        ctermfg=244 guifg=#808080
 hi treeDirSlash    ctermfg=159 guifg=PaleTurquoise
 hi treeLink        ctermfg=182 guifg=#dfafdf
-"
-set background=dark

@@ -2,8 +2,8 @@
 " Name:       slateblue
 " Maintainer: miyakogi (https://githuub.com/miyakogi)
 " URL:        https://github.com/miyakogi/slateblue.vim
-" Version:    2.0.1
-" LastChange: 2014.07.10
+" Version:    2.2
+" LastChange: 2014.11.26
 
 " This colorscheme is based on 'slate' colorscheme.
 " Original 'slate' colorscheme is included in Vim-runtime by default.

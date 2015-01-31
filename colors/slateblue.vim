@@ -10,13 +10,13 @@
 
 hi clear
 set background=dark
-if version > 580
- if exists("syntax_on")
+if v:version > 580
+ if exists('syntax_on')
   syntax reset
  endif
 endif
 
-let g:colors_name = "slateblue"
+let g:colors_name = 'slateblue'
 
 if has('gui_running') || &t_Co > 255
   hi Normal          guifg=snow ctermfg=231 guibg=grey14 ctermbg=235

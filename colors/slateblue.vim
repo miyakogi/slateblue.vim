@@ -25,7 +25,7 @@ else
 endif
 
 hi Cursor          ctermfg=16 ctermbg=231 guifg=#000000 guibg=#F8F8F0
-hi CursorLine    term=reverse ctermbg=234 guibg=#181818
+hi CursorLine      term=reverse ctermbg=234 guibg=#181818
 hi CursorColumn    term=reverse ctermbg=234 guibg=#181818
 hi VertSplit       term=reverse cterm=reverse ctermfg=16 ctermbg=16 gui=reverse guifg=#000000 guibg=#000000
 hi Folded          term=standout ctermfg=241 ctermbg=16 guifg=grey40 guibg=black

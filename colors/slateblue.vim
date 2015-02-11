@@ -8,21 +8,25 @@
 " This colorscheme is based on 'slate' colorscheme.
 " Original 'slate' colorscheme is included in Vim-runtime by default.
 
+if exists('g:colors_name')
+  unlet g:colors_name
+endif
+
 highlight clear
-set background=dark
 if v:version > 580
  if exists('syntax_on')
   syntax reset
  endif
 endif
 
-let g:colors_name = 'slateblue'
-
-if has('gui_running') || &t_Co > 255
+if has('gui_running') || &t_Co > 16
   highlight Normal          guifg=snow ctermfg=231 guibg=grey14 ctermbg=235
+  set background=dark
 else
   highlight Normal          ctermfg=white ctermbg=black
 endif
+
+let g:colors_name = 'slateblue'
 
 highlight Cursor          ctermfg=16 ctermbg=231 guifg=#000000 guibg=#F8F8F0
 highlight CursorLine      term=reverse ctermbg=234 guibg=#181818
